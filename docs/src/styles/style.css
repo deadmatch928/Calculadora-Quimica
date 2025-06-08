@@ -1,287 +1,247 @@
 /* Fuente moderna */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap");
 
 body {
-    font-family: 'Inter', sans-serif;
-    text-align: center;
-    background-color: #f7f9fc; /* Azul grisáceo claro */
-    color: #333;
-    margin: 20px;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  background-color: #f7f9fc;
+  color: #333;
+  margin: 20px;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 /* Contenedor principal */
-.container {
-    background: white;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    margin: auto;
+#calculadora-container {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+  transition: all 0.4s ease;
 }
 
 /* Etiquetas y entradas */
 label {
-    display: block;
-    font-size: 16px;
-    margin-top: 15px;
-    font-weight: 600;
-    text-align: left;
+  display: block;
+  font-size: 16px;
+  margin-top: 15px;
+  font-weight: 600;
+  text-align: left;
 }
 
 input {
-    width: 100%;
-    padding: 12px;
-    margin-top: 5px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    font-size: 16px;
-    background-color: #f4f6f8;
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #f4f6f8;
+  transition: all 0.3s ease;
 }
 
 /* Botón de cálculo */
 button {
-    margin-top: 20px;
-    padding: 12px 18px;
-    border: none;
-    background: #4CAF50; /* Verde pastel */
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: 0.3s ease;
+  margin-top: 20px;
+  padding: 12px 18px;
+  border: none;
+  background: #4caf50;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s ease;
 }
 
 button:hover {
-    background: #388E3C; /* Verde más intenso al pasar el mouse */
+  background: #388e3c;
+  transform: translateY(-2px);
 }
 
 /* Resultado */
 #resultado {
-    font-size: 18px;
-    margin-top: 15px;
-    font-weight: bold;
+  font-size: 18px;
+  margin-top: 15px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f4f6f8;
 }
 
 /* Diseño del switch */
 .switch {
-    position: absolute;
-    top: 20px;
-    right: 50px;
-    width: 50px;
-    height: 25px;
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  width: 50px;
+  height: 25px;
 }
 
 .switch input {
-    display: none;
+  display: none;
 }
 
 .slider {
-    position: absolute;
-    cursor: pointer;
-    width: 100%;
-    height: 100%;
-    background: #ddd;
-    border-radius: 25px;
-    transition: 0.4s;
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  background: #ddd;
+  border-radius: 25px;
+  transition: 0.4s;
 }
 
 .slider:before {
-    content: "";
-    position: absolute;
-    width: 18px;
-    height: 18px;
-    background: white;
-    border-radius: 50%;
-    top: 3.5px;
-    left: 4px;
-    transition: 0.4s;
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: white;
+  border-radius: 50%;
+  top: 3.5px;
+  left: 4px;
+  transition: 0.4s;
 }
 
 input:checked + .slider {
-    background: #4CAF50; /* Verde pastel para el modo oscuro */
+  background: #4caf50;
 }
 
 input:checked + .slider:before {
-    transform: translateX(24px);
-}
-
-/* Modo Claro (Por Defecto) */
-body {
-    font-family: 'Inter', sans-serif;
-    text-align: center;
-    background-color: #f7f9fc;
-    color: #333;
-    transition: 0.4s ease;
+  transform: translateX(24px);
 }
 
 /* Modo Oscuro */
 body.dark-mode {
-    background-color: #121212;
-    color: #ffffff;
-}
-
-.dark-mode .container {
-    background: #1e1e1e;
-    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
-}
-
-.dark-mode input {
-    background-color: #222;
-    color: white;
-    border: 1px solid #444;
-}
-
-.dark-mode button {
-    background: #ff9800; /* Naranja pastel */
-}
-
-.dark-mode button:hover {
-    background: #e68900;
-}
-
-.modo-container {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    display: flex;
-    align-items: center;
-    gap: 50px;
-}
-
-.modo-icon-sol {
-    position: relative;
-    top: 31px;
-    right: 20px;
-    font-size: 22px;
-    transition: opacity 0.4s ease;
-}
-
-.modo-icon-luna {
-    position: relative;
-    top: 30px;
-    right: 20px;
-    font-size: 22px;
-    transition: opacity 0.4s ease;
-}
-
-/* Opacidad para indicar el modo activo */
-.dark-mode .modo-icon:first-child { /* Sol en modo oscuro */
-    opacity: 0.4;
-}
-
-.dark-mode .modo-icon:last-child { /* Luna en modo oscuro */
-    opacity: 1;
-}
-
-body:not(.dark-mode) .modo-icon:first-child { /* Sol en modo claro */
-    opacity: 1;
-}
-
-body:not(.dark-mode) .modo-icon:last-child { /* Luna en modo claro */
-    opacity: 0.4;
-}
-
-
-/* calculadoras */
-.botones-container {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-.calc-btn {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background: #4CAF50;
-    color: white;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-.calc-btn:hover {
-    background: #388E3C;
-}
-
-#calculadora-container {
-    text-align: center;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background: #f7f9fc;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #121212;
+  color: #ffffff;
 }
 
 .dark-mode #calculadora-container {
-    background: #1e1e1e;
-    color: white;
+  background: #1e1e1e;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode input {
+  background-color: #2d2d2d;
+  color: white;
+  border: 1px solid #444;
+}
+
+.dark-mode button {
+  background: #ff9800;
+}
+
+.dark-mode button:hover {
+  background: #e68900;
+}
+
+.dark-mode #resultado {
+  background-color: #2d2d2d;
+  color: white;
+}
+
+.modo-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.modo-icon-sol,
+.modo-icon-luna {
+  font-size: 22px;
+  transition: opacity 0.4s ease;
+}
+
+/* Botones de calculadora */
+.botones-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.calc-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #4caf50;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+  min-width: 120px;
+}
+
+.calc-btn:hover {
+  background: #388e3c;
+  transform: translateY(-2px);
 }
 
 /* Estilos para el acordeón */
 details {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    padding: 10px;
-    transition: all 0.3s ease;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 10px auto;
+  padding: 10px;
+  max-width: 600px;
+  transition: all 0.3s ease;
 }
 
 details[open] {
-    background-color: #e0e0e0;
+  background-color: #f8f9fa;
 }
 
 summary {
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    padding: 10px;
-    background-color: #f7f7f7;
-    color: #555;
-    transition: background-color 0.3s ease;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 15px;
+  background-color: #f7f7f7;
+  color: #333;
+  border-radius: 6px;
+  transition: all 0.3s ease;
 }
 
 summary:hover {
-    background-color: #bdbdbd;
+  background-color: #e9ecef;
 }
 
-/* Estilo del contenido dentro de cada acordeón */
 details div {
-    padding: 10px 0;
-    color: #666;
-    font-size: 16px;
+  padding: 15px;
+  text-align: left;
 }
 
-/* Estilo para texto dentro del acordeón */
 details p {
-    margin: 0;
+  margin: 10px 0;
+  line-height: 1.5;
 }
 
+/* Dark mode para el acordeón */
 .dark-mode details {
-    background-color: #1e1e1e;
-    border: none;
+  background-color: #1e1e1e;
+  border-color: #444;
 }
 
 .dark-mode details[open] {
-    background-color: #1e1e1e;
+  background-color: #2d2d2d;
 }
 
 .dark-mode summary {
-    background-color: #333333;
-    color: #ddd;
-    border: none;
+  background-color: #2d2d2d;
+  color: #fff;
 }
 
 .dark-mode summary:hover {
-    background-color: #666;
+  background-color: #3d3d3d;
 }
 
 .dark-mode details div {
-    color: #ccc;
-}
-
-.dark-mode details p {
-    color: #ccc;
+  color: #e0e0e0;
 }
