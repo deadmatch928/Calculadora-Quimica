@@ -6,48 +6,67 @@
     <title>Calculadora de Concentración</title>
     <link rel="stylesheet" href="src/styles/style.css" />
   </head>
+  <meta name="description" content="Calculadora interactiva de concentraciones quimicas"/>
   <body>
-    <div class="modo-container">
-      <span class="modo-icon-sol">🌞</span>
-      <label class="switch">
-        <input type="checkbox" id="modoSwitch" />
-        <span class="slider"></span>
-      </label>
-      <span class="modo-icon-luna">🌙</span>
-    </div>
+    <header class="header-container">
+      <div class="modo-container" role="region" aria-label="Selector de tema">
+        <span aria-hidden="true">☀️</span>
+        <label class="switch">
+          <input type="checkbox" id="modoSwitch" />
+          <span class="slider"></span>
+        </label>
+        <span aria-hidden="true">🌙</span>
+      </div>
+      <nav class="botones-container" aria-label="Selección de cálculo">
+        <button class="calc-btn" data-calculo="m-m">%m/m</button>
+        <button class="calc-btn" data-calculo="m-v">%m/v</button>
+        <button class="calc-btn" data-calculo="v-v">%v/v</button>
+        <button class="calc-btn" data-calculo="ppm">ppm</button>
+        <button class="calc-btn" data-calculo="molaridad">Molaridad</button>
+        <button class="calc-btn" data-calculo="normalidad">Normalidad</button>
+        <button class="calc-btn" data-calculo="fraccion-molar">Fraccion Molar</button>
+      </nav>
+    </header>
+    <main class="main-content">
+      <section class="info-container left-info" aria-labelledby="historical-title">
+        <h3 id="historical-title">Origen y Contexto Histórico</h3>
+        <div id="historical-info"></div>
+      </section>
 
-    <div class="botones-container">
-      <button class="calc-btn" data-calculo="molaridad">Molaridad</button>
-      <button class="calc-btn" data-calculo="normalidad">Normalidad</button>
-      <button class="calc-btn" data-calculo="molalidad">Molalidad</button>
-    </div>
+      <section class="calculator-column">
+        <section id="calculadora-container">
+          <!-- Aquí se cambiará el contenido dinámicamente -->
+        </section>
+        <div id="resultado" class="resultado"></div>
+        <details id="manual-de-uso">
+          <summary>Manual de uso</summary>
+          <div>
+            <p>Seleccione un tipo de cálculo para ver su descripción y fórmula.</p>
+          </div>
+        </details>
+      </section>
 
-    <div id="calculadora-container">
-      <!-- Aquí se cambiará el contenido dinámicamente -->
-    </div>
+      <section class="info-container right-info" aria-labelledby="importance-title">
+        <h3 id="importance-title">Importancia y Aplicaciones</h3>
+        <div id="importance-info"></div>
+      </div>
+      </section>
+    </main>
 
-    <!--manual de uso -->
-    <details>
-      <summary>Manual de uso</summary>
-      <details>
-        <summary>Molaridad</summary>
-        <div>
-          <p>Calcula la molaridad dependiendo de los litros de solucion.</p>
+    <div class="additional-info">
+      <h3>Información Adicional</h3>
+      <div class="info-grid">
+        <div class="info-box">
+          <div class="info-content" id="additional-info-content"></div>
         </div>
-      </details>
-      <details>
-        <summary>Normalidad</summary>
-        <div>
-          <p>Calcula la normalidad dependiendo de los litros de solucion.</p>
+        <div class="image-box">
+          <div class="image-container" id="topic-image">
+            <img src="" alt="Imagen ilustrativa" id="topic-image-src" />
+            <p class="image-caption" id="image-caption"></p>
+          </div>
         </div>
-      </details>
-      <details>
-        <summary>Molalidad</summary>
-        <div>
-          <p>Calcula la molalidad dependiendo de los kilogramos de solvente.</p>
-        </div>
-      </details>
-    </details>
+      </div>
+    </div>
     <script type="module" src="src/main.js"></script>
   </body>
 </html>

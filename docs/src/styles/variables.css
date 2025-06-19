@@ -1,0 +1,11 @@
+/* variables.css */
+:root {
+  --font-family: "Inter", sans-serif;
+  --bg-color: #f0f2f5;
+  --text-color: #2c3e50;
+  --primary-color: #1976d2;
+  --secondary-bg: #e3f2fd;
+  --transition-fast: 0.3s ease;
+  --shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-hover: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
