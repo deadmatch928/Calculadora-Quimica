@@ -379,7 +379,7 @@ window.Calculator = {
             const imageContainer = document.createElement("div");
             imageContainer.className = "image-container";
             const image = document.createElement("img");
-            image.src = info.imageUrl;
+            image.src = `${window.location.origin}/${info.imageUrl}`;
             image.alt = info.title;
             imageContainer.appendChild(image);
             const caption = document.createElement("p");
@@ -393,7 +393,7 @@ window.Calculator = {
               const topicImage = document.getElementById("topic-image-src");
               const imageCaption = document.getElementById("image-caption");
 
-              topicImage.src = info.secondImageUrl;
+              topicImage.src = `${window.location.origin}/${info.secondImageUrl}`;
               topicImage.alt = info.title;
               imageCaption.textContent = info.secondImageCaption;
             }
