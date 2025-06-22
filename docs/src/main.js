@@ -64,7 +64,8 @@ window.Calculator = {
       imageUrl: "docs/src/assets/Fotos-Dimm-67.jpg",
       imageCaption:
         "Laboratorio moderno donde se realizan mediciones de concentración",
-      secondImageUrl: "docs/src/assets/laboratorio-masa-1.jpg",
+      secondImageUrl:
+        "Calculadora-Quimica/docs/src/assets/laboratorio-masa-1.jpg",
       secondImageCaption: "Medición de porcentajes masa/masa en laboratorio",
     },
     "m-v": {
