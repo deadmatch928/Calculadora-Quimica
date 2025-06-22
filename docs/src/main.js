@@ -54,90 +54,99 @@ window.Calculator = {
   // Historical and contextual information
   historicalInfo: {
     "m-m": {
-      title: "Porcentajes (%m/m, %m/v, %v/v)",
+      title: "Porcentaje masa/masa (%m/m)",
       history:
-        "El uso de porcentajes en química tiene raíces en el desarrollo temprano de la química analítica, particularmente durante el siglo XIX, en un momento en que los científicos comenzaron a estandarizar cómo expresar las proporciones de los componentes en una mezcla o disolución.",
+        "En el siglo XIX, la química analítica introdujo los porcentajes para estandarizar las proporciones de los componentes en mezclas. Más tarde, al consolidarse la química cuantitativa en universidades europeas, esta práctica se incorporó a los manuales de laboratorio, facilitando comparaciones precisas en investigaciones industriales y académicas.",
       importance:
         "Se utilizan en etiquetado de productos, control de calidad, industria alimentaria, medicina, e incluso en productos de limpieza y cosmética.",
       additional:
         "Antes, los químicos usaban términos más cualitativos, lo cual generaba confusión. La incorporación del porcentaje como medida permitió comunicar de forma simple cuánta cantidad de una sustancia está presente respecto al total, algo fundamental para la reproducibilidad de experimentos.",
-      imageUrl:
-        "https://images.unsplash.com/photo-1581093458791-9d15482442f6?w=500",
+      imageUrl: "src/assets/Fotos-Dimm-67.jpg",
       imageCaption:
         "Laboratorio moderno donde se realizan mediciones de concentración",
+      secondImageUrl: "src/assets/laboratorio-masa-1.jpg",
+      secondImageCaption: "Medición de porcentajes masa/masa en laboratorio",
     },
     "m-v": {
       title: "Porcentaje masa/volumen (%m/v)",
       history:
-        "Común en química biológica y farmacéutica, expresa gramos de soluto por cada 100 mL de solución.",
+        "El porcentaje masa/volumen surgió en los laboratorios farmacéuticos del siglo XIX, cuando fue necesario un método sencillo para dosificar solutos en relación directa al volumen de la solución. Con el desarrollo de la farmacología moderna a principios del XX, su uso se institucionalizó en hospitales y fábricas de medicamentos, garantizando precisión en preparaciones orales e intravenosas.",
       importance:
         "Especialmente útil en preparación de soluciones médicas y farmacéuticas donde se necesita una relación precisa entre masa y volumen.",
       additional:
         "Se usa frecuentemente en la preparación de medicamentos y soluciones intravenosas.",
-      imageUrl:
-        "https://images.unsplash.com/photo-1581093458791-9d15482442f6?w=500",
+      imageUrl: "src/assets/maxresdefault.jpg",
       imageCaption: "Preparación de soluciones en un laboratorio clínico",
+      secondImageUrl: "src/assets/muestreo.jpg",
+      secondImageCaption: "Análisis de concentraciones en muestras de agua",
     },
     "v-v": {
       title: "Porcentaje volumen/volumen (%v/v)",
       history:
-        "Usado principalmente en mezclas líquidas como soluciones alcohólicas, perfumes o desinfectantes.",
+        "El porcentaje volumen/volumen nace a finales del siglo XIX en la industria de bebidas alcohólicas y perfumería, cuando los productores requerían un estándar para indicar la pureza de mezclas líquidas. La revolución de la destilación industrial y el auge de la perfumería moderna impulsaron su adopción en controles de calidad, asegurando uniformidad en la concentración de etanol y esencias aromáticas.",
       importance:
         "Esencial en la industria de bebidas alcohólicas, perfumería y productos de limpieza.",
       additional:
         "Por ejemplo, un desinfectante que dice 'alcohol al 70% v/v' está indicando que el 70% del volumen es alcohol puro.",
-      imageUrl:
-        "https://images.unsplash.com/photo-1581093458791-9d15482442f6?w=500",
+      imageUrl: "src/assets/250px-Alcoholmeter-_20091205.jpg",
       imageCaption: "Medición de volúmenes en la industria de bebidas",
+      secondImageUrl: "src/assets/istockphoto-1466912934-170667a.jpg",
+      secondImageCaption: "Control de calidad en industria de bebidas",
     },
     ppm: {
       title: "Partes por millón (ppm)",
       history:
-        "El concepto surgió durante la Revolución Industrial, cuando el control de contaminantes y aditivos empezó a tener un impacto directo en la salud y el medio ambiente.",
+        "El concepto de partes por millón se consolidó durante la Revolución Industrial del siglo XIX ante la creciente necesidad de cuantificar trazas de contaminantes en aire y agua. Este término permitió a químicos y autoridades ambientales establecer límites de seguridad y sentó las bases de las normativas modernas en calidad de agua potable, industria alimentaria y control de emisiones.",
       importance:
-        "Clave en normas ambientales, industria alimentaria y medicina.",
+        "La importancia de PPM (Partes por Millón) radica en su uso como unidad de medida de concentración, especialmente en situaciones donde se manejan cantidades muy pequeñas de una sustancia en otra. Esto es crucial en diversos campos, como la calidad del aire, el tratamiento de agua, la industria alimentaria y la gestión de proyectos. ",
       additional:
         "La OMS establece que el límite seguro de arsénico en agua potable es de 10 ppm.",
-      imageUrl:
-        "https://images.unsplash.com/photo-1581093458791-9d15482442f6?w=500",
+      imageUrl: "src/assets/Proyecto-Agua-IET-investigadores-posando.jpg",
       imageCaption: "Análisis de calidad de agua en laboratorio ambiental",
+      secondImageUrl: "src/assets/Analisis-de-arsenico-del-agua.png",
+      secondImageCaption: "Análisis de calidad de agua en fuentes potables",
     },
     molaridad: {
       title: "Molaridad (M)",
       history:
-        "Su desarrollo teórico está vinculado al químico Wilhelm Ostwald, ganador del Premio Nobel en 1909 por su trabajo en reacciones químicas y disoluciones.",
+        "La molaridad se formalizó en el siglo XIX gracias a los estudios de Wilhelm Ostwald y Svante Arrhenius, que vincularon la cantidad de sustancia con su volumen de disolución. Con la adopción del concepto de mol como unidad estándar, la molaridad se convirtió en la referencia central en laboratorios de investigación y enseñanza, facilitando comparaciones exactas entre diferentes soluciones.",
       importance:
         "La unidad más común para trabajar en laboratorio porque está directamente ligada a la cantidad de sustancia y volumen.",
       additional:
         "Permite comparaciones exactas entre sustancias distintas gracias al concepto de mol (≈6.022 × 10²³ partículas).",
-      imageUrl:
-        "https://images.unsplash.com/photo-1581093458791-9d15482442f6?w=500",
+      imageUrl: "src/assets/louis-reed-JeInkKlI2Po-unsplash.jpg",
       imageCaption:
         "Preparación de soluciones molares en laboratorio de investigación",
+      secondImageUrl: "src/assets/csm_G534_03E_02_63b5d24e75.png",
+      secondImageCaption: "Medición de concentraciones molares",
     },
     normalidad: {
       title: "Normalidad (N)",
       history:
-        "Fue una unidad muy usada en el siglo XIX y principios del XX, especialmente gracias al trabajo de Justus von Liebig, un químico alemán que revolucionó el análisis cuantitativo.",
+        "La normalidad fue introducida a mediados del siglo XIX por Justus von Liebig y sus contemporáneos, quienes buscaban incorporar la reactividad de los solutos en titulaciones ácido-base. Este enfoque revolucionó el análisis cuantitativo, estandarizando procedimientos de neutralización hasta que la molaridad desplazó parcialmente su uso, aunque aún sigue vigente en titulaciones específicas.",
       importance:
         "Aunque hoy la molaridad ha reemplazado en gran parte a la normalidad, esta sigue siendo usada en titulaciones ácido-base y en reacciones de neutralización.",
       additional:
         "Su importancia radica en que considera la reactividad de las sustancias, no solo su cantidad.",
       imageUrl:
-        "https://images.unsplash.com/photo-1581093458791-9d15482442f6?w=500",
+        "src/assets/Titulación ácido-base en laboratorio analítico.jpeg",
       imageCaption: "Titulación ácido-base en laboratorio analítico",
+      secondImageUrl: "src/assets/Analisis_destacada-770x498.png",
+      secondImageCaption: "Análisis de normalidad en laboratorio",
     },
     "fraccion-molar": {
       title: "Fracción Molar (X)",
       history:
-        "Surge de los trabajos de Josiah Willard Gibbs, un físico y químico estadounidense que estableció las bases de la termodinámica química a finales del siglo XIX.",
+        "La fracción molar se originó en los trabajos termodinámicos de Josiah Willard Gibbs a finales del siglo XIX, como parte de los fundamentos de la química estadística. Al expresar las proporciones molares independientemente de masa o volumen, este concepto resultó esencial en el estudio de propiedades coligativas y mezclas de gases, aportando claridad en sistemas ideales.",
       importance:
-        "Fundamental en la ley de Dalton, estudios de propiedades coligativas y física química.",
+        "Fundamental en la ley de Dalton para comprender el comportamiento de las mezclas de gases en diversas aplicaciones, desde la respiración hasta la ingeniería química.",
       additional:
         "Es muy útil en mezclas de gases y soluciones ideales, donde el volumen o la masa pueden variar, pero las relaciones molares permanecen constantes.",
-      imageUrl:
-        "https://images.unsplash.com/photo-1581093458791-9d15482442f6?w=500",
+      imageUrl: "src/assets/QQ截图20230523154651.jpg",
       imageCaption: "Análisis de mezclas gaseosas en industria petroquímica",
+      secondImageUrl:
+        "src/assets/Figura-2-Perfiles-de-las-fracciones-molares-de-los-gases-obtenidos-con-el-software-AFS_Q320.jpg",
+      secondImageCaption: "Estudio de fracciones molares en gases",
     },
   },
 
@@ -365,6 +374,7 @@ window.Calculator = {
             </div>
           `;
           if (info.imageUrl) {
+            // Primera imagen en el contenedor dinámico
             const imageContainer = document.createElement("div");
             imageContainer.className = "image-container";
             const image = document.createElement("img");
@@ -376,6 +386,16 @@ window.Calculator = {
             caption.textContent = info.imageCaption;
             imageContainer.appendChild(caption);
             additionalInfo.appendChild(imageContainer);
+
+            // Segunda imagen en el contenedor fijo
+            if (info.secondImageUrl) {
+              const topicImage = document.getElementById("topic-image-src");
+              const imageCaption = document.getElementById("image-caption");
+
+              topicImage.src = info.secondImageUrl;
+              topicImage.alt = info.title;
+              imageCaption.textContent = info.secondImageCaption;
+            }
           }
         }
       });

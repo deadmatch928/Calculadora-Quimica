@@ -112,10 +112,10 @@ input:checked + .slider:before {
 /* Scientific Main Content */
 .main-content {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1.2fr 2fr 1.2fr;
   gap: 30px;
   margin: 20px auto;
-  max-width: 1200px;
+  max-width: 1400px;
   padding: 0 20px;
   align-items: start;
   margin-bottom: 40px; /* Add space between main content and additional info */
@@ -262,7 +262,7 @@ input:checked + .slider:before {
 
 /* Additional Info Section */
 .additional-info {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 40px auto; /* Increased margin */
   padding: 20px;
   background-color: #ffffff;
@@ -300,6 +300,10 @@ input:checked + .slider:before {
   padding: 20px;
   border-radius: 8px;
   border: 1px solid #bbdefb;
+  min-height: 350px; /* Altura mínima para consistencia */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* Scientific Image Container */
@@ -314,7 +318,22 @@ input:checked + .slider:before {
 
 .image-container img {
   max-width: 100%;
+  max-height: 300px; /* Altura máxima fija */
+  width: auto;
   height: auto;
+  object-fit: contain; /* Mantiene la proporción sin estirar */
+  border-radius: 4px;
+  margin-bottom: 10px;
+  border: 1px solid #bbdefb;
+}
+
+/* Aplicar las mismas reglas a las imágenes dentro del image-box fijo */
+#topic-image img {
+  max-width: 100%;
+  max-height: 300px; /* Misma altura máxima */
+  width: auto;
+  height: auto;
+  object-fit: contain; /* Mantiene la proporción sin estirar */
   border-radius: 4px;
   margin-bottom: 10px;
   border: 1px solid #bbdefb;
@@ -326,6 +345,7 @@ input:checked + .slider:before {
   font-style: italic;
   margin-top: 10px;
   font-size: 0.9em;
+  flex-shrink: 0; /* Evita que el caption se comprima */
 }
 
 /* Scientific Manual */
