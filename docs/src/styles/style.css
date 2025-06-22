@@ -105,8 +105,8 @@ input:checked + .slider:before {
 .calc-btn--hover,
 .calc-btn:hover {
   background-color: #bbdefb;
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-hover);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(33, 150, 243, 0.4);
 }
 
 /* Scientific Main Content */
@@ -179,12 +179,18 @@ input:checked + .slider:before {
   font-family: "Inter", monospace;
   background-color: #f5f9ff;
   transition: all 0.3s ease;
+  box-shadow: 0 0 0 0 rgba(25, 118, 210, 0); /* Initial state for animation */
+}
+
+.input-group input:hover {
+  border-color: #64b5f6;
+  box-shadow: 0 0 5px rgba(33, 150, 243, 0.4);
 }
 
 .input-group input:focus {
   outline: none;
   border-color: #1976d2;
-  box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.1);
+  box-shadow: 0 0 8px rgba(25, 118, 210, 0.6);
 }
 
 /* Calculate Button */
@@ -205,7 +211,7 @@ input:checked + .slider:before {
 .calculate-btn:hover {
   background-color: #1565c0;
   transform: translateY(-2px);
-  box-shadow: var(--shadow-hover);
+  box-shadow: 0 4px 10px rgba(21, 101, 192, 0.3);
 }
 
 /* Result Display */
@@ -361,10 +367,19 @@ details {
 
 summary {
   cursor: pointer;
-  color: #1976d2;
+  padding: 10px 15px;
+  background-color: #e3f2fd;
+  border-radius: 6px;
+  transition: all var(--transition-fast);
   font-weight: 500;
-  padding: 10px;
-  border-bottom: 2px solid #e3f2fd;
+  color: #1976d2;
+  outline: none;
+}
+
+summary:hover {
+  background-color: #bbdefb;
+  box-shadow: 0 2px 8px rgba(33, 150, 243, 0.3);
+  transform: translateY(-1px);
 }
 
 /* Dark Mode Scientific Theme */
@@ -390,7 +405,8 @@ summary {
 }
 
 .dark-mode .calc-btn:hover {
-  background-color: #333;
+  background-color: #555;
+  box-shadow: 0 4px 12px rgba(187, 222, 251, 0.2);
 }
 
 .dark-mode input[type="number"] {
@@ -421,8 +437,13 @@ summary {
 }
 
 .dark-mode summary {
-  color: #64b5f6;
-  border-bottom-color: #333;
+  background-color: #2d3748;
+  color: #bbdefb;
+}
+
+.dark-mode summary:hover {
+  background-color: #4a5568;
+  box-shadow: 0 2px 8px rgba(187, 222, 251, 0.2);
 }
 
 /* Responsive Design */
