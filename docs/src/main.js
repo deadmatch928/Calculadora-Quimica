@@ -77,7 +77,7 @@ window.Calculator = {
         "Se usa frecuentemente en la preparación de medicamentos y soluciones intravenosas.",
       imageUrl: "src/assets/maxresdefault.jpg",
       imageCaption: "Preparación de soluciones en un laboratorio clínico",
-      secondImageUrl: "src/assets/muestreo.jpg",
+      secondImageUrl: "src/assets/analisis-de-agua-ceiinc-sas-colombia.jpg",
       secondImageCaption: "Análisis de concentraciones en muestras de agua",
     },
     "v-v": {
