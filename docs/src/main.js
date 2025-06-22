@@ -104,7 +104,8 @@ window.Calculator = {
       imageUrl: "src/assets/Proyecto-Agua-IET-investigadores-posando.jpg",
       imageCaption: "Análisis de calidad de agua en laboratorio ambiental",
       secondImageUrl: "src/assets/Analisis-de-arsenico-del-agua.png",
-      secondImageCaption: "Análisis de calidad de agua en fuentes potables",
+      secondImageCaption:
+        "Análisis de calidad de agua en fuentes de agua potable",
     },
     molaridad: {
       title: "Molaridad (M)",
