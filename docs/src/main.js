@@ -61,11 +61,10 @@ window.Calculator = {
         "Se utilizan en etiquetado de productos, control de calidad, industria alimentaria, medicina, e incluso en productos de limpieza y cosmética.",
       additional:
         "Antes, los químicos usaban términos más cualitativos, lo cual generaba confusión. La incorporación del porcentaje como medida permitió comunicar de forma simple cuánta cantidad de una sustancia está presente respecto al total, algo fundamental para la reproducibilidad de experimentos.",
-      imageUrl: "docs/src/assets/Fotos-Dimm-67.jpg",
+      imageUrl: "/Calculadora-Quimica/src/assets/Fotos-Dimm-67.jpg",
       imageCaption:
         "Laboratorio moderno donde se realizan mediciones de concentración",
-      secondImageUrl:
-        "Calculadora-Quimica/docs/src/assets/laboratorio-masa-1.jpg",
+      secondImageUrl: "/Calculadora-Quimica/src/assets/laboratorio-masa-1.jpg",
       secondImageCaption: "Medición de porcentajes masa/masa en laboratorio",
     },
     "m-v": {
@@ -76,9 +75,9 @@ window.Calculator = {
         "Especialmente útil en preparación de soluciones médicas y farmacéuticas donde se necesita una relación precisa entre masa y volumen.",
       additional:
         "Se usa frecuentemente en la preparación de medicamentos y soluciones intravenosas.",
-      imageUrl: "docs/src/assets/maxresdefault.jpg",
+      imageUrl: "/Calculadora-Quimica/src/assets/maxresdefault.jpg",
       imageCaption: "Preparación de soluciones en un laboratorio clínico",
-      secondImageUrl: "docs/src/assets/muestreo.jpg",
+      secondImageUrl: "/Calculadora-Quimica/src/assets/muestreo.jpg",
       secondImageCaption: "Análisis de concentraciones en muestras de agua",
     },
     "v-v": {
@@ -89,9 +88,11 @@ window.Calculator = {
         "Esencial en la industria de bebidas alcohólicas, perfumería y productos de limpieza.",
       additional:
         "Por ejemplo, un desinfectante que dice 'alcohol al 70% v/v' está indicando que el 70% del volumen es alcohol puro.",
-      imageUrl: "docs/src/assets/250px-Alcoholmeter-_20091205.jpg",
+      imageUrl:
+        "/Calculadora-Quimica/src/assets/250px-Alcoholmeter-_20091205.jpg",
       imageCaption: "Medición de volúmenes en la industria de bebidas",
-      secondImageUrl: "docs/src/assets/istockphoto-1466912934-170667a.jpg",
+      secondImageUrl:
+        "/Calculadora-Quimica/src/assets/istockphoto-1466912934-170667a.jpg",
       secondImageCaption: "Control de calidad en industria de bebidas",
     },
     ppm: {
@@ -102,9 +103,11 @@ window.Calculator = {
         "La importancia de PPM (Partes por Millón) radica en su uso como unidad de medida de concentración, especialmente en situaciones donde se manejan cantidades muy pequeñas de una sustancia en otra. Esto es crucial en diversos campos, como la calidad del aire, el tratamiento de agua, la industria alimentaria y la gestión de proyectos. ",
       additional:
         "La OMS establece que el límite seguro de arsénico en agua potable es de 10 ppm.",
-      imageUrl: "docs/src/assets/Proyecto-Agua-IET-investigadores-posando.jpg",
+      imageUrl:
+        "/Calculadora-Quimica/src/assets/Proyecto-Agua-IET-investigadores-posando.jpg",
       imageCaption: "Análisis de calidad de agua en laboratorio ambiental",
-      secondImageUrl: "docs/src/assets/Analisis-de-arsenico-del-agua.png",
+      secondImageUrl:
+        "/Calculadora-Quimica/src/assets/Analisis-de-arsenico-del-agua.png",
       secondImageCaption:
         "Análisis de calidad de agua en fuentes de agua potable",
     },
@@ -116,10 +119,12 @@ window.Calculator = {
         "La unidad más común para trabajar en laboratorio porque está directamente ligada a la cantidad de sustancia y volumen.",
       additional:
         "Permite comparaciones exactas entre sustancias distintas gracias al concepto de mol (≈6.022 × 10²³ partículas).",
-      imageUrl: "docs/src/assets/louis-reed-JeInkKlI2Po-unsplash.jpg",
+      imageUrl:
+        "/Calculadora-Quimica/src/assets/louis-reed-JeInkKlI2Po-unsplash.jpg",
       imageCaption:
         "Preparación de soluciones molares en laboratorio de investigación",
-      secondImageUrl: "docs/src/assets/csm_G534_03E_02_63b5d24e75.png",
+      secondImageUrl:
+        "/Calculadora-Quimica/src/assets/csm_G534_03E_02_63b5d24e75.png",
       secondImageCaption: "Medición de concentraciones molares",
     },
     normalidad: {
@@ -131,9 +136,10 @@ window.Calculator = {
       additional:
         "Su importancia radica en que considera la reactividad de las sustancias, no solo su cantidad.",
       imageUrl:
-        "docs/src/assets/Titulación ácido-base en laboratorio analítico.jpeg",
+        "/Calculadora-Quimica/src/assets/Titulación ácido-base en laboratorio analítico.jpeg",
       imageCaption: "Titulación ácido-base en laboratorio analítico",
-      secondImageUrl: "docs/src/assets/Analisis_destacada-770x498.png",
+      secondImageUrl:
+        "/Calculadora-Quimica/src/assets/Analisis_destacada-770x498.png",
       secondImageCaption: "Análisis de normalidad en laboratorio",
     },
     "fraccion-molar": {
@@ -144,10 +150,10 @@ window.Calculator = {
         "Fundamental en la ley de Dalton para comprender el comportamiento de las mezclas de gases en diversas aplicaciones, desde la respiración hasta la ingeniería química.",
       additional:
         "Es muy útil en mezclas de gases y soluciones ideales, donde el volumen o la masa pueden variar, pero las relaciones molares permanecen constantes.",
-      imageUrl: "docs/src/assets/QQ截图20230523154651.jpg",
+      imageUrl: "/Calculadora-Quimica/src/assets/QQ截图20230523154651.jpg",
       imageCaption: "Análisis de mezclas gaseosas en industria petroquímica",
       secondImageUrl:
-        "docs/src/assets/Figura-2-Perfiles-de-las-fracciones-molares-de-los-gases-obtenidos-con-el-software-AFS_Q320.jpg",
+        "/Calculadora-Quimica/src/assets/Figura-2-Perfiles-de-las-fracciones-molares-de-los-gases-obtenidos-con-el-software-AFS_Q320.jpg",
       secondImageCaption: "Estudio de fracciones molares en gases",
     },
   },
