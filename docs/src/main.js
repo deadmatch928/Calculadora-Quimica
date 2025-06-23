@@ -310,19 +310,55 @@ window.Calculator = {
     const importanceInfo = document.getElementById("importance-info");
     const additionalInfo = document.getElementById("additional-info-content");
 
-    // Initial welcome message
-    calculadoraContainer.innerHTML = `
-      <h2>Bienvenido a la Calculadora de Concentraciones</h2>
-      <p>Seleccione el tipo de concentración que desea calcular:</p>
-    `;
+    // Mostrar %m/m por defecto
+    calculadoraContainer.innerHTML = "";
+    calculadoraContainer.appendChild(MMTemplate());
+    manualContainer.textContent = `Manual de uso - %m/m`;
+    this.updateManual("m-m");
+    // Mostrar info contextual de %m/m
+    const info = this.historicalInfo["m-m"];
+    if (info) {
+      historicalInfo.innerHTML = `
+        <div class="info-content">
+          <h4>${info.title}</h4>
+          <p>${info.history}</p>
+        </div>
+      `;
+      importanceInfo.innerHTML = `
+        <div class="info-content">
+          <p>${info.importance}</p>
+        </div>
+      `;
+      additionalInfo.innerHTML = `
+        <div class="info-content">
+          <p>${info.additional}</p>
+        </div>
+      `;
+      if (info.imageUrl) {
+        // Primera imagen en el contenedor dinámico
+        const imageContainer = document.createElement("div");
+        imageContainer.className = "image-container";
+        const image = document.createElement("img");
+        image.src = info.imageUrl;
+        image.alt = info.title;
+        imageContainer.appendChild(image);
+        const caption = document.createElement("p");
+        caption.className = "image-caption";
+        caption.textContent = info.imageCaption;
+        imageContainer.appendChild(caption);
+        additionalInfo.appendChild(imageContainer);
 
-    // Clear initial info
-    historicalInfo.innerHTML =
-      "<p>Seleccione un tipo de cálculo para ver su información histórica.</p>";
-    importanceInfo.innerHTML =
-      "<p>Seleccione un tipo de cálculo para ver su importancia y aplicaciones.</p>";
-    additionalInfo.innerHTML =
-      "<p>Seleccione un tipo de cálculo para ver información adicional.</p>";
+        // Segunda imagen en el contenedor fijo
+        if (info.secondImageUrl) {
+          const topicImage = document.getElementById("topic-image-src");
+          const imageCaption = document.getElementById("image-caption");
+
+          topicImage.src = info.secondImageUrl;
+          topicImage.alt = info.title;
+          imageCaption.textContent = info.secondImageCaption;
+        }
+      }
+    }
 
     // Add click events to calculator buttons
     botones.forEach((boton) => {
