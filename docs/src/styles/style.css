@@ -378,6 +378,40 @@ input:checked + .slider:before {
   flex-shrink: 0; /* Evita que el caption se comprima */
 }
 
+/* Scientific More Info Link */
+.more-info-link {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #e3f2fd;
+}
+
+.more-info-link a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e3f2fd;
+  color: #1976d2;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all var(--transition-fast);
+  border: 1px solid #bbdefb;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.more-info-link a:hover {
+  background-color: #bbdefb;
+  color: #1565c0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(33, 150, 243, 0.3);
+  border-color: #64b5f6;
+}
+
+.more-info-link a:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(33, 150, 243, 0.2);
+}
+
 /* Scientific Manual */
 details {
   background-color: #f9f9f9;
@@ -509,6 +543,29 @@ summary:hover {
 
 .dark-mode .image-container:hover {
   box-shadow: 0 8px 16px rgba(99, 179, 237, 0.2);
+}
+
+/* Dark Mode More Info Link */
+.dark-mode .more-info-link {
+  border-top-color: #4a5568;
+}
+
+.dark-mode .more-info-link a {
+  background-color: #2d3748;
+  color: #bbdefb;
+  border-color: #4a5568;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.dark-mode .more-info-link a:hover {
+  background-color: #4a5568;
+  color: #e3f2fd;
+  box-shadow: 0 4px 8px rgba(187, 222, 251, 0.2);
+  border-color: #64b5f6;
+}
+
+.dark-mode .more-info-link a:active {
+  box-shadow: 0 2px 4px rgba(187, 222, 251, 0.1);
 }
 
 /* Responsive Design */
