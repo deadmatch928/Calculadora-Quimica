@@ -315,52 +315,65 @@ input:checked + .slider:before {
   padding: 15px;
   border-radius: 6px;
   text-align: center;
+}
+
+/* Animación solo en el contenido interno */
+.info-content {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.info-box:hover {
+.info-content:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(33, 150, 243, 0.25);
 }
 
 .image-box {
-  background-color: #f5f9ff;
+  background-color: transparent;
   padding: 20px;
   border-radius: 8px;
-  border: 1px solid #bbdefb;
+  border: none;
   min-height: 350px; /* Altura mínima para consistencia */
   display: flex;
   flex-direction: column;
   justify-content: center;
+  box-shadow: none !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Scientific Image Container */
+.image-box:hover {
+  box-shadow: none !important;
+}
+
 .image-container {
   margin-top: 15px;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border: 1px solid #e3f2fd;
+  border: none;
+  box-shadow: none !important;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
 }
 
 .image-container:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(33, 150, 243, 0.2);
+  box-shadow: none !important;
 }
 
 .image-container img {
   width: 100%;
-  max-height: 300px; /* Altura máxima fija */
+  max-height: auto; /* Altura máxima fija */
   object-fit: contain; /* Mantiene la proporción sin estirar */
-  border-radius: 4px;
+  border-radius: 8px;
   margin-bottom: 10px;
 }
 
 /* Aplicar las mismas reglas a las imágenes dentro del image-box fijo */
 #topic-image img {
   max-width: 100%;
-  max-height: 300px; /* Misma altura máxima */
+  max-height: auto; /* Misma altura máxima */
   width: auto;
   height: auto;
   object-fit: contain; /* Mantiene la proporción sin estirar */
@@ -566,6 +579,15 @@ summary:hover {
 
 .dark-mode .more-info-link a:active {
   box-shadow: 0 2px 4px rgba(187, 222, 251, 0.1);
+}
+
+/* Dark Mode Adjustments */
+.dark-mode .image-box,
+.dark-mode .image-box:hover,
+.dark-mode .image-container,
+.dark-mode .image-container:hover {
+  box-shadow: none !important;
+  border-color: transparent !important;
 }
 
 /* Responsive Design */
