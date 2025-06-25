@@ -335,12 +335,13 @@ input:checked + .slider:before {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  box-shadow: none !important;
+  box-shadow: 0 2px 4px rgba(33, 150, 243, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .image-box:hover {
-  box-shadow: none !important;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(33, 150, 243, 0.25);
 }
 
 .image-container {
@@ -583,11 +584,9 @@ summary:hover {
 
 /* Dark Mode Adjustments */
 .dark-mode .image-box,
-.dark-mode .image-box:hover,
-.dark-mode .image-container,
-.dark-mode .image-container:hover {
-  box-shadow: none !important;
-  border-color: transparent !important;
+.dark-mode .image-box:hover {
+  background-color: #333;
+  border-color: #444;
 }
 
 /* Responsive Design */
